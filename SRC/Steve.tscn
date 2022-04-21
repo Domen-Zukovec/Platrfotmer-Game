@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://SRC/Steve_sprite_frames.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://SRC/Steve.gd" type="Script" id=2]
+[ext_resource path="res://ASSETS/sounds/jump1.ogg" type="AudioStream" id=3]
+[ext_resource path="res://ASSETS/sounds/error_007.ogg" type="AudioStream" id=4]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 29.0
+height = 42.0
+
+[node name="Steve" type="KinematicBody2D"]
+collision_mask = 30
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 1 )
+animation = "idle"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 14 )
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="SoundJump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -21.0
+
+[node name="SoundOuch" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -9.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
