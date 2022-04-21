@@ -9,7 +9,9 @@ https://domenz22.itch.io/domzi-game
 
 There is also a iOS prot, but I currrently don't have the money to buy a developer account.
 
-# How it looks:
+# How it looks and plays:
+
+The first stage is just a classic platformer where you need to collect 50 coins to proceed to the next level. There are two types of enemies ones are blue (they don't detect edges and can fall off) and ones are purple (they detect edges and stay on the platforms). The next stage is the survival stage, here you are spawned at the begging of the map, to get to the end and pick up a key to move on. The stage is full of slimes. The third and last stage is a time trial, the goal is to get to the end in less than 90 seconds. Good luck!
 
 ![image](https://user-images.githubusercontent.com/37377101/164423990-00bb5885-ef9a-4e14-a54f-fe767055a38a.png)
 
