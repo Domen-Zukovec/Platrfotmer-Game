@@ -3,7 +3,7 @@ A short platformer (cca. 30 min) that I made using the Godot engine and assets f
 
 # How to play:
 
-You can play the whole game using this link:
+You can play the game using this link:
 
 https://domenz22.itch.io/domzi-game
 
